@@ -206,6 +206,14 @@ namespace GD3D.Player
 
             // Call FixedUpdate() in activeGamemodeScript
             _activeGamemodeScript?.FixedUpdate();
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                ChangeGamemode(Gamemode.cube);
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                ChangeGamemode(Gamemode.ship);
+            }
         }
 
         public override void OnClickKey(PressMode mode)
