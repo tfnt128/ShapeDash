@@ -1,3 +1,4 @@
+using GD3D.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,13 +11,14 @@ namespace GD3D
         public GameObject mesh;
         public GameObject canvasButons;
         public bool canRot;
+        public PlayerMain player;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
                 canRot = true;
-                
+                player.enabled = false;
                 canvasButons.SetActive(true);
             }
         }

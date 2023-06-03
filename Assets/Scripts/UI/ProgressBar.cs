@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using GD3D.Player;
-using GD3D.Audio;
 using TMPro;
 
 namespace GD3D.UI
@@ -45,7 +44,6 @@ namespace GD3D.UI
         private void Start()
         {
             // Temporary end distance
-            endDistance = MusicPlayer.Instance.EndDistance;
             print("Reminder to fix this end distance thing");
 
             // Get instances

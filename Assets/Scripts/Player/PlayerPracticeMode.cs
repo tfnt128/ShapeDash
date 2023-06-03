@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GD3D.Audio;
 using GD3D.CustomInput;
 using GD3D.UI;
 
@@ -34,7 +33,6 @@ namespace GD3D.Player
                 _inPracticeMode = value;
 
                 // Play practice music or stop it depending on if we are entering or exiting practice mode
-                MusicPlayer.TogglePracticeSong(value);
 
                 // If we exit practice mode, destroy all current crystal and clear all checkpoints
                 if (!value)

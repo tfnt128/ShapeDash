@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using GD3D.Audio;
 
 namespace GD3D.UI
 {
@@ -78,11 +77,6 @@ namespace GD3D.UI
 
             Transition.TransitionToScene(LevelData.LevelBuildIndex);
 
-            // Stop the music
-            MainMenuMusic.StopInstance();
-
-            // Play sound effect
-            SoundManager.PlaySound("Play Level", 1);
         }
     }
 }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GD3D.Audio;
 using GD3D.ObjectPooling;
 
 namespace GD3D.Player
@@ -34,6 +33,7 @@ namespace GD3D.Player
         public RotateMesh rot;
 
         public GameObject canvasButton;
+        public PlayerMain player;
 
         public override void Start()
         {
@@ -129,6 +129,8 @@ namespace GD3D.Player
         /// </summary>
         public void Die()
         {
+
+            player.enabled = true;
             if(canvasButton != null)
             {
                 canvasButton.SetActive(false);
@@ -150,8 +152,6 @@ namespace GD3D.Player
             // Remove after a second
             obj.RemoveAfterTime(1);
 
-            // Play death sound
-            SoundManager.PlaySound("Player Explode", 1);
 
             // Invoke on death event
             player.InvokeDeathEvent();

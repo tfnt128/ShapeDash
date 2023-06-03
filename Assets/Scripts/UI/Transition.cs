@@ -106,7 +106,6 @@ namespace GD3D.UI
             });
 
             // Play quit to menu sound effect
-            Audio.SoundManager.PlaySound("Quit To Menu", 1);
 
             return ease;
         }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pulse Antenna
   - camera
+  - win
   layers:
   - Default
   - TransparentFX

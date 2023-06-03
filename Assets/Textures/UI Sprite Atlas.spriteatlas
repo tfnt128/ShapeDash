@@ -117,6 +117,22 @@ SpriteAtlas:
   - {fileID: 1828317573, guid: aa0b13c389d96db4b9a7683572c7b3d4, type: 3}
   - {fileID: -376279259, guid: aa0b13c389d96db4b9a7683572c7b3d4, type: 3}
   - {fileID: 21300000, guid: 686396e369bd00b45a3710258638b4c4, type: 3}
+  - {fileID: -1656212645, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -1769394331, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 1500052046, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -2078830156, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 640183791, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 438057861, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 2088373361, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -664116025, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -1306151768, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 971179661, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -1061051168, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -2059971528, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -2051228931, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: -116261717, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 6769343, guid: ccd062f368814bf41a2d1105c6b23a8e, type: 3}
+  - {fileID: 1218450320, guid: 93acd8648bfe0a74ab18d3f627025f0e, type: 3}
   - {fileID: 7504960768746471891, guid: 93acd8648bfe0a74ab18d3f627025f0e, type: 3}
   - {fileID: 9169877530624898698, guid: 93acd8648bfe0a74ab18d3f627025f0e, type: 3}
   - {fileID: 5412086268284726026, guid: 93acd8648bfe0a74ab18d3f627025f0e, type: 3}
@@ -128,6 +144,18 @@ SpriteAtlas:
   - {fileID: 5991905433260383566, guid: 4d89b4f4b34105d4d8cd8debaf5754fd, type: 3}
   - {fileID: -6295128720306898382, guid: 4d89b4f4b34105d4d8cd8debaf5754fd, type: 3}
   - {fileID: 21300000, guid: 2cd2be55738598041bad334439e956d0, type: 3}
+  - {fileID: 814190922, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: -777915546, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 1061571581, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: -1991527972, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: -370286379, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 661824510, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: -101161069, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 322767169, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 1810641471, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: -1390190731, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 2035498874, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
+  - {fileID: 292233327, guid: f309b1751895ef44a8487aa78d42ffb7, type: 3}
   - {fileID: 21300000, guid: 38965c363f9f6b7459b7b6e940328374, type: 3}
   - {fileID: -9090031319712262758, guid: 83ad576638a43d447b4d5b037c862872, type: 3}
   - {fileID: 1689264921967585734, guid: 83ad576638a43d447b4d5b037c862872, type: 3}
@@ -178,6 +206,7 @@ SpriteAtlas:
   - {fileID: -1245452623, guid: a8bf0fdab89d075498001c32c4249c8c, type: 3}
   - {fileID: 1149844755, guid: a8bf0fdab89d075498001c32c4249c8c, type: 3}
   - {fileID: 1717250267, guid: a8bf0fdab89d075498001c32c4249c8c, type: 3}
+  - {fileID: 21300000, guid: 1dc59fdabafb33e48bf5f800bda6e17c, type: 3}
   - {fileID: -8104852708141983460, guid: d730440be1160fd4d84cb48ddd5b323f, type: 3}
   - {fileID: -4956616993730934267, guid: d730440be1160fd4d84cb48ddd5b323f, type: 3}
   - {fileID: 21300000, guid: 89b3502cc1d9c1d45a8bee0814f6cf06, type: 3}
@@ -189,8 +218,23 @@ SpriteAtlas:
   - {fileID: -6863372124455298626, guid: 0b88cd9c092e8734cb685ddee02c7ba9, type: 3}
   - {fileID: -6533415245931017838, guid: 0b88cd9c092e8734cb685ddee02c7ba9, type: 3}
   - {fileID: -914786408918721608, guid: 0b88cd9c092e8734cb685ddee02c7ba9, type: 3}
+  - {fileID: -1107465435, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: -398931308, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 357020351, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 299085706, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 383056209, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 1767672013, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: -1095323346, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 2035467117, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
+  - {fileID: 123371736, guid: e929b2bce3a729941a923fd22b4dc949, type: 3}
   - {fileID: 21300000, guid: 766c26fc2c990ae4f92482b3545e3ae0, type: 3}
   - {fileID: 21300000, guid: 4e87718fd42d2324b90d9f431ac7cbfe, type: 3}
+  - {fileID: 1171199471, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
+  - {fileID: -353196409, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
+  - {fileID: 1420779969, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
+  - {fileID: 33850942, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
+  - {fileID: 1357440452, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
+  - {fileID: 494088552, guid: 17c4d0bf04e453d40ab7d44afe7da021, type: 3}
   - {fileID: 6718019388469675894, guid: fa9c23bfe9aea7e4b8daa1cabd2187d8, type: 3}
   - {fileID: 6515525504886258248, guid: fa9c23bfe9aea7e4b8daa1cabd2187d8, type: 3}
   - {fileID: 5281356216875377014, guid: fa9c23bfe9aea7e4b8daa1cabd2187d8, type: 3}
@@ -262,6 +306,22 @@ SpriteAtlas:
   - Snap
   - Swipe
   - Menu 2
+  - Zoom In Button
+  - Reload Button
+  - Delete Level Button
+  - Playtest Button
+  - Redo Button
+  - Zoom Out Button
+  - Playtest Pause Button
+  - New Level Button
+  - Level Options Button
+  - Delete Object Button
+  - Music Stop Button
+  - Undo Button
+  - Playtest Stop Button
+  - Level Editor Pause Button
+  - Music Play Button
+  - Slider Outline Gold
   - Slider Fill
   - Slider Outline
   - Slider Handle
@@ -273,6 +333,18 @@ SpriteAtlas:
   - Main Menu Newgrounds Button
   - Main Menu Quit Button
   - Button 5
+  - Level Editor Modify Buttons_7
+  - Level Editor Modify Buttons_4
+  - Level Editor Modify Buttons_5
+  - Level Editor Modify Buttons_11
+  - Level Editor Modify Buttons_10
+  - Level Editor Modify Buttons_8
+  - Level Editor Modify Buttons_9
+  - Level Editor Modify Buttons_2
+  - Level Editor Modify Buttons_3
+  - Level Editor Modify Buttons_0
+  - Level Editor Modify Buttons_1
+  - Level Editor Modify Buttons_6
   - Menu 3
   - Practice Remove
   - Practice Place
@@ -323,6 +395,7 @@ SpriteAtlas:
   - Level Editor Tab Icons_1
   - Level Editor Tab Icons_2
   - Level Editor Tab Icons_3
+  - Small Arrow
   - Roptop Logo Big
   - Roptop Logo Small
   - Button 2
@@ -334,8 +407,23 @@ SpriteAtlas:
   - Checkmark Box_0
   - Checkmark Box_1
   - Checkmark Box_2
+  - Level Editor Edit Icons_8
+  - Level Editor Edit Icons_5
+  - Level Editor Edit Icons_4
+  - Level Editor Edit Icons_7
+  - Level Editor Edit Icons_6
+  - Level Editor Edit Icons_1
+  - Level Editor Edit Icons_0
+  - Level Editor Edit Icons_3
+  - Level Editor Edit Icons_2
   - Button 4
   - Menu 4
+  - Level Editor Delete Icons_4
+  - Level Editor Delete Icons_5
+  - Level Editor Delete Icons_0
+  - Level Editor Delete Icons_1
+  - Level Editor Delete Icons_2
+  - Level Editor Delete Icons_3
   - Level Select Corner
   - Level Select Arrow
   - Level Select Info Button

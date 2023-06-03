@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GD3D.CustomInput;
+using UnityEngine.EventSystems;
 
 namespace GD3D.Player
 {
@@ -15,6 +16,8 @@ namespace GD3D.Player
     public class PlayerInput : MonoBehaviour
     {
         public const int KEYCODE_LENGTH = 510;
+
+        private bool isTouchingUI = false;
 
         private static Key[] s_defaultKeys = new Key[]
         {
@@ -219,7 +222,6 @@ namespace GD3D.Player
         {
             DoAxisInput();
         }
-
         /// <summary>
         /// Is called every frame in <see cref="Update"/> <para/>
         /// Sets values for all of the special axis inputs like gamepad trigger input and dpad input for example.
@@ -326,6 +328,7 @@ namespace GD3D.Player
 
             return Vector2.zero;
         }
+
 
         /// <summary>
         /// Will check if <paramref name="axisValue"/> is within the <paramref name="deadZone"/> and set it to 0 if it's inside the range.
