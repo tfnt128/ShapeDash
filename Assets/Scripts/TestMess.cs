@@ -12,44 +12,91 @@ namespace GD3D
         public GameObject playerMesh;
 
 
-        public Collider col1;
+        public BoxCollider col1;
         public Collider col2;
-        public Collider col3;
 
         public bool isNotCube;
-        // Update is called once per frame
+        public bool isCil;
 
-        private void Start()
-        {
-            playerMesh.GetComponent<MeshFilter>().mesh = meshCube;
-        }
+        public bool isQ;
+        public bool isC;
+        public bool isR;
+
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.A))
             {
                 isNotCube = false;
+                isCil = false;
                 playerMesh.GetComponent<MeshFilter>().mesh = meshCube;
-                col2.enabled = false;
-                col1.enabled = true;
-            }
+
+                isC = false;
+                isR = false;
+                isQ = true;
+                ;            }
             if (Input.GetKeyDown(KeyCode.S))
             {
+                isCil = false;
                 isNotCube = true;
                 playerMesh.GetComponent<MeshFilter>().mesh = ballMesh;
-                col1.enabled = false;
-                col2.enabled = true;
+                
+                isQ = false;
+                isR = false;
+                isC = true;
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
+
+                isCil = true;
                 isNotCube = true;
                 playerMesh.GetComponent<MeshFilter>().mesh = triangle;
+                
+
+                isC = false;
+                isQ = false;
+                isR = true;
+                
             }
             if (!isNotCube)
             {
                 playerMesh.GetComponent<MeshFilter>().mesh = meshCube;
-                col2.enabled = false;
-                col1.enabled = true;
+
+                isC = false;
+                isR = false;
+                isQ = true;
             }
+        }
+
+        public void circle()
+        {
+            isCil = false;
+            isNotCube = true;
+            playerMesh.GetComponent<MeshFilter>().mesh = ballMesh;
+
+            isQ = false;
+            isR = false;
+            isC = true;
+        }
+        public void cube()
+        {
+            isNotCube = false;
+            isCil = false;
+            playerMesh.GetComponent<MeshFilter>().mesh = meshCube;
+
+            isC = false;
+            isR = false;
+            isQ = true;
+        }
+        public void cylinder()
+        {
+            isCil = true;
+            isNotCube = true;
+            playerMesh.GetComponent<MeshFilter>().mesh = triangle;
+
+
+            isC = false;
+            isQ = false;
+            isR = true;
         }
     }
 }

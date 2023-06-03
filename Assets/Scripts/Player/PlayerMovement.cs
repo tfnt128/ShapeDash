@@ -184,7 +184,7 @@ namespace GD3D.Player
             newRot.x = transform.rotation.eulerAngles.x;
             newRot.z = transform.rotation.eulerAngles.z;
 
-            transform.rotation = Quaternion.Euler(newRot);
+            //transform.rotation = Quaternion.Euler(newRot);
         }
 
         /// <summary>

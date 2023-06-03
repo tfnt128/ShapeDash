@@ -31,6 +31,10 @@ namespace GD3D.Player
 
         public TestMess mesh;
 
+        public RotateMesh rot;
+
+        public GameObject canvasButton;
+
         public override void Start()
         {
             base.Start();
@@ -125,7 +129,11 @@ namespace GD3D.Player
         /// </summary>
         public void Die()
         {
-           
+            if(canvasButton != null)
+            {
+                canvasButton.SetActive(false);
+            }
+            rot.canRot = false;
             if (camera.is3D)
             {
                 StartCoroutine(camera.transtionCam());

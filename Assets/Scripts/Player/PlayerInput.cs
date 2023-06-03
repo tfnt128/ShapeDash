@@ -226,7 +226,6 @@ namespace GD3D.Player
         /// </summary>
         private void DoAxisInput()
         {
-            // Update the old inputs to be the current inputs
             s_oldBadTriggerInput = s_badTriggerInput;
             s_oldLeftTriggerInput = s_leftTriggerInput;
             s_oldRightTriggerInput = s_rightTriggerInput;
@@ -235,12 +234,12 @@ namespace GD3D.Player
             s_oldDpadInput = s_dpadInput;
 
             // Update the inputs to be new so the old ones become old
-            s_exactBadTriggerInput = Input.GetAxis("Trigger");
-            s_exactLeftTriggerInput = Mathf.Abs(Input.GetAxis("Left Trigger"));
-            s_exactRightTriggerInput = Mathf.Abs(Input.GetAxis("Right Trigger"));
-            s_exactLeftStickInput = new Vector2(Input.GetAxis("Joystick Horizontal"), Input.GetAxis("Joystick Vertical"));
-            s_exactRightStickInput = new Vector2(Input.GetAxis("Right Joystick Horizontal"), Input.GetAxis("Right Joystick Vertical"));
-            s_exactDpadInput = new Vector2(Input.GetAxis("Dpad X"), Input.GetAxis("Dpad Y"));
+            s_exactBadTriggerInput = GetTouchAxis("Trigger");
+            s_exactLeftTriggerInput = Mathf.Abs(GetTouchAxis("Left Trigger"));
+            s_exactRightTriggerInput = Mathf.Abs(GetTouchAxis("Right Trigger"));
+            s_exactLeftStickInput = GetTouchVector2Axis("Joystick");
+            s_exactRightStickInput = GetTouchVector2Axis("Right Joystick");
+            s_exactDpadInput = GetTouchVector2Axis("Dpad");
 
             // Make the inputs 0 if they are within their dead zone
             // Also round the input values whilst the exact input values will stay the same
@@ -263,6 +262,69 @@ namespace GD3D.Player
             // Dpad
             s_exactDpadInput = LockVector2Axis(s_exactDpadInput, DpadDeadzone);
             s_dpadInput = Helpers.RoundVector2(s_exactDpadInput);
+        }
+        private float GetTouchAxis(string axisName)
+        {
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+
+                if (touch.phase == TouchPhase.Began)
+                {
+                    if (axisName == "Trigger")
+                    {
+                        // Lógica para obter o valor do eixo de "Trigger" com input touch
+                        // Você pode usar a posição do toque na tela ou outro método para determinar o valor do eixo
+                        return 0f; // Substitua 0f pelo valor do eixo de "Trigger" obtido através do input touch
+                    }
+                    else if (axisName == "Left Trigger")
+                    {
+                        // Lógica para obter o valor do eixo de "Left Trigger" com input touch
+                        // Substitua 0f pelo valor do eixo de "Left Trigger" obtido através do input touch
+                        return 0f;
+                    }
+                    else if (axisName == "Right Trigger")
+                    {
+                        // Lógica para obter o valor do eixo de "Right Trigger" com input touch
+                        // Substitua 0f pelo valor do eixo de "Right Trigger" obtido através do input touch
+                        return 0f;
+                    }
+                }
+            }
+
+            return 0f;
+        }
+
+        private Vector2 GetTouchVector2Axis(string axisName)
+        {
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+
+                if (touch.phase == TouchPhase.Began)
+                {
+                    if (axisName == "Joystick")
+                    {
+                        // Lógica para obter o vetor do eixo de "Joystick" com input touch
+                        // Substitua Vector2.zero pelo vetor do eixo de "Joystick" obtido através do input touch
+                        return Vector2.zero;
+                    }
+                    else if (axisName == "Right Joystick")
+                    {
+                        // Lógica para obter o vetor do eixo de "Right Joystick" com input touch
+                        // Substitua Vector2.zero pelo vetor do eixo de "Right Joystick" obtido através do input touch
+                        return Vector2.zero;
+                    }
+                    else if (axisName == "Dpad")
+                    {
+                        // Lógica para obter o vetor do eixo de "Dpad" com input touch
+                        // Substitua Vector2.zero pelo vetor do eixo de "Dpad" obtido através do input touch
+                        return Vector2.zero;
+                    }
+                }
+            }
+
+            return Vector2.zero;
         }
 
         /// <summary>
