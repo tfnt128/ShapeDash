@@ -5,21 +5,13 @@ namespace GD3D
 {
     public class CameraSwap : MonoBehaviour
     {
-        private bool is3D;
+        public bool is3D;
         [SerializeField] private GameObject PerspCamera;
         [SerializeField] private GameObject OrtoCamera;
         [SerializeField] private Animator transition;
-        void Update()
+        public IEnumerator transtionCam()
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                is3D = !is3D;
-                StartCoroutine(transtionCam());
-            }
-
-        }
-        IEnumerator transtionCam()
-        {
+            is3D = !is3D;
             transition.SetTrigger("Battle");
             yield return new WaitForSeconds(.1f);
             

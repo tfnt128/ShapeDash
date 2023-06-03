@@ -59,11 +59,12 @@ namespace GD3D.Player
         private long? _newBestSizeEaseID = null;
         private Vector3 _newBestStartSize;
         private Transform _newBestTransform;
-
         //-- Other
         private Coroutine _currentRespawnCoroutine;
         private SaveFile _saveFile;
         private PlayerPracticeMode _practiceMode;
+
+        public CameraSwap camera;
 
         /// <summary>
         /// Start is called before the first frame update.
@@ -259,6 +260,11 @@ namespace GD3D.Player
             }
 
             StartRespawnCouroutine(coroutine);
+
+            if (camera.is3D)
+            {
+                StartCoroutine(camera.transtionCam());
+            }
         }
 
         private void StartRespawnCouroutine(Coroutine coroutine)
@@ -278,6 +284,10 @@ namespace GD3D.Player
         /// </summary>
         public void Respawn()
         {
+            if (camera.is3D)
+            {
+                StartCoroutine(camera.transtionCam());
+            }
             // Enable the pause menu so you can pause again
             PauseMenu.CanPause = true;
 
@@ -319,6 +329,10 @@ namespace GD3D.Player
         /// </summary>
         private IEnumerator RespawnCouroutine()
         {
+            if (camera.is3D)
+            {
+                StartCoroutine(camera.transtionCam());
+            }
             // Make the player flash on/off and spawn respawn rings every time the player is turned on
             // Do this 3 times total over the course of 0.6 seconds
             SpawnRespawnRing();

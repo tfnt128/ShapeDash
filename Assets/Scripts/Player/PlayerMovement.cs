@@ -170,7 +170,7 @@ namespace GD3D.Player
                 _travelAmount = _startTravelAmount;
 
                 // Disable the trail and teleport so that the trail doesn't do a big stretchy stretch across the entire map
-                PlayerTrailManager.HaveTrail = false;
+                PlayerTrailManager.HaveTrail = true;
 
                 // Invoke main menu teleport event
                 OnMainMenuTeleport?.Invoke();

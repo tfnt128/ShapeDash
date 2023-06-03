@@ -27,6 +27,10 @@ namespace GD3D.Player
         private HashSet<ParticleSystemRenderer> _particleRenderers = new HashSet<ParticleSystemRenderer>();
         private HashSet<MaterialColorer> _materialColorers = new HashSet<MaterialColorer>();
 
+        public CameraSwap camera;
+
+        public TestMess mesh;
+
         public override void Start()
         {
             base.Start();
@@ -99,6 +103,10 @@ namespace GD3D.Player
             // Die if we are touching death stuff
             if (_touchingDeath)
             {
+                if (mesh.isNotCube)
+                {
+                    mesh.isNotCube = false;
+                }
                 Die();
             }
 
@@ -117,6 +125,11 @@ namespace GD3D.Player
         /// </summary>
         public void Die()
         {
+           
+            if (camera.is3D)
+            {
+                StartCoroutine(camera.transtionCam());
+            }
             // Don't die again if we have already died
             if (player.IsDead)
             {
