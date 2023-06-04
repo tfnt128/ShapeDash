@@ -261,7 +261,7 @@ namespace GD3D.Player
 
             StartRespawnCouroutine(coroutine);
 
-            if (camera.is3D)
+            if (!camera.is3D)
             {
                 StartCoroutine(camera.transtionCam());
             }
@@ -284,7 +284,7 @@ namespace GD3D.Player
         /// </summary>
         public void Respawn()
         {
-            if (camera.is3D)
+            if (!camera.is3D)
             {
                 StartCoroutine(camera.transtionCam());
             }
@@ -329,7 +329,7 @@ namespace GD3D.Player
         /// </summary>
         private IEnumerator RespawnCouroutine()
         {
-            if (camera.is3D)
+            if (!camera.is3D)
             {
                 StartCoroutine(camera.transtionCam());
             }

@@ -144,7 +144,7 @@ namespace GD3D.Player
                 canvasButton.SetActive(false);
             }
             rot.canRot = false;
-            if (camera.is3D)
+            if (!camera.is3D)
             {
                 StartCoroutine(camera.transtionCam());
             }
