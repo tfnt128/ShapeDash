@@ -22,6 +22,8 @@ namespace GD3D
         public bool isC;
         public bool isR;
 
+        public AudioSource change;
+
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.A))
@@ -69,6 +71,10 @@ namespace GD3D
 
         public void circle()
         {
+            if (!isC)
+            {
+                change.Play();
+            }
             isCil = false;
             isNotCube = true;
             playerMesh.GetComponent<MeshFilter>().mesh = ballMesh;
@@ -79,6 +85,10 @@ namespace GD3D
         }
         public void cube()
         {
+            if (!isQ)
+            {
+                change.Play();
+            }
             isNotCube = false;
             isCil = false;
             playerMesh.GetComponent<MeshFilter>().mesh = meshCube;
@@ -89,6 +99,10 @@ namespace GD3D
         }
         public void cylinder()
         {
+            if (!isR)
+            {
+                change.Play();
+            }
             isCil = true;
             isNotCube = true;
             playerMesh.GetComponent<MeshFilter>().mesh = triangle;

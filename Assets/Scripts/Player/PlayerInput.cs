@@ -17,7 +17,6 @@ namespace GD3D.Player
     {
         public const int KEYCODE_LENGTH = 510;
 
-        private bool isTouchingUI = false;
 
         private static Key[] s_defaultKeys = new Key[]
         {
@@ -228,6 +227,7 @@ namespace GD3D.Player
         /// </summary>
         private void DoAxisInput()
         {
+
             s_oldBadTriggerInput = s_badTriggerInput;
             s_oldLeftTriggerInput = s_leftTriggerInput;
             s_oldRightTriggerInput = s_rightTriggerInput;

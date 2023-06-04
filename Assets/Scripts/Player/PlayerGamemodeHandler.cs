@@ -14,6 +14,7 @@ namespace GD3D.Player
     {
         private Gamemode _startGamemode;
         public Gamemode CurrentGamemode;
+        public AudioSource jump;
 
         /// <summary>
         /// HashSet of airborne gamemodes.
@@ -207,9 +208,15 @@ namespace GD3D.Player
             // Call FixedUpdate() in activeGamemodeScript
             _activeGamemodeScript?.FixedUpdate();
         }
-
+        bool canPlay = true;
         public override void OnClickKey(PressMode mode)
         {
+            if (canPlay)
+            {
+                jump.Play();
+                StartCoroutine(jumpOff());
+            }
+            
             base.OnClickKey(mode);
 
             // Return if the player is dead
@@ -220,6 +227,12 @@ namespace GD3D.Player
 
             // Call OnClick() in activeGamemodeScript
             _activeGamemodeScript?.OnClick(mode);
+        }
+        IEnumerator jumpOff()
+        {
+            canPlay = false;
+            yield return new WaitForSeconds(.45f);
+            canPlay = true;
         }
 
         /// <summary>

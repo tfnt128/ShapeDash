@@ -16,6 +16,8 @@ namespace GD3D.Objects
 
         private PlayerGamemodeHandler gamemodeHandler;
 
+        public AudioSource jump;
+
         public override void Start()
         {
             base.Start();
@@ -39,6 +41,8 @@ namespace GD3D.Objects
 
         public override void OnTouched()
         {
+            jump.Play();
+
             // Get velocity
             GamemodeSizedFloat velocity = _velocityData[gamemodeHandler.CurrentGamemode];
 

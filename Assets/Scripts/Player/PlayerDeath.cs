@@ -35,6 +35,7 @@ namespace GD3D.Player
         public GameObject canvasButton;
         public PlayerMain player;
 
+        public AudioSource die;
         public override void Start()
         {
             base.Start();
@@ -127,9 +128,16 @@ namespace GD3D.Player
         /// <summary>
         /// Makes the player explode, plays the death sound effect, disables the mesh and respawns the player afterwards.
         /// </summary>
+        /// 
+        bool canPlay = true;
         public void Die()
         {
-
+            if (canPlay)
+            {
+                die.Play();
+                StartCoroutine(dieOff());
+            }
+            
             player.enabled = true;
             if(canvasButton != null)
             {
@@ -156,5 +164,12 @@ namespace GD3D.Player
             // Invoke on death event
             player.InvokeDeathEvent();
         }
+        IEnumerator dieOff()
+        {
+            canPlay = false;
+            yield return new WaitForSeconds(1f);
+            canPlay = true;
+        }
+
     }
 }
