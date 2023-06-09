@@ -26446,7 +26446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4745763097346008313, guid: a02e04fbdad898f4180ac7e265e78711, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 139.49
+      value: 138.97
       objectReference: {fileID: 0}
     - target: {fileID: 4745763097346008313, guid: a02e04fbdad898f4180ac7e265e78711, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26454,7 +26454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4745763097346008313, guid: a02e04fbdad898f4180ac7e265e78711, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.004472954
       objectReference: {fileID: 0}
     - target: {fileID: 4745763097346008313, guid: a02e04fbdad898f4180ac7e265e78711, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49934,6 +49934,11 @@ MonoBehaviour:
       EaseRate: 0
     CompleteMode: 0
   camera: {fileID: 35222417}
+  blackScreen: {fileID: 1503518750}
+  blackScreen2: {fileID: 23514599}
+  blackScreen3: {fileID: 82460583}
+  blackScreen4: {fileID: 849889639}
+  mesh: {fileID: 1638723845}
 --- !u!114 &1393972302
 MonoBehaviour:
   m_ObjectHideFlags: 0

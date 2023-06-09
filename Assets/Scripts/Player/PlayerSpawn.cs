@@ -65,7 +65,12 @@ namespace GD3D.Player
         private PlayerPracticeMode _practiceMode;
 
         public CameraSwap camera;
+        public GameObject blackScreen;
+        public GameObject blackScreen2;
+        public GameObject blackScreen3;
+        public GameObject blackScreen4;
 
+        public TestMess mesh;
         /// <summary>
         /// Start is called before the first frame update.
         /// </summary>
@@ -322,6 +327,12 @@ namespace GD3D.Player
 
             // Ignore input for this moment so the player won't instantly jump when respawning
             player.IgnoreInput();
+            blackScreen.SetActive(true);
+            blackScreen2.SetActive(true);
+            blackScreen3.SetActive(true);
+            blackScreen4.SetActive(true);
+            mesh.isNotCube = false;
+            
         }
             
         /// <summary>

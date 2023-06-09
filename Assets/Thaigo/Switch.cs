@@ -13,7 +13,7 @@ namespace GD3D
             {
                 if(blackScreen != null)
                 {
-                    Destroy(blackScreen.gameObject);
+                    blackScreen.SetActive(false);
                 }               
             }
         }
